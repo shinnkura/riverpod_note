@@ -4,9 +4,11 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'my_widget.dart';
 
 void main() {
-  const app = MyApp();
-  const scope = ProviderScope(child: app);
-  runApp(scope);
+  runApp(
+    const ProviderScope(
+      child: MyApp(),
+    ),
+  );
 }
 
 class MyApp extends StatelessWidget {
